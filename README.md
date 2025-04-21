@@ -17,22 +17,6 @@ This is a minimal Python web app that responds with:
 You can view it at `http://localhost:5000` after running the container.
 
 ---
-
-## 🧾 Files Included
-
-### 📄 app.py
-
-```python
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return "🚀 Hello from a Multi-Arch Python App!"
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
 ## 📁 Files in This Project
 
 - `app.py` – A simple Python Flask web app that responds on `/`
