@@ -39,7 +39,7 @@ docker buildx build \
   --platform linux/amd64,linux/arm64 \
   -t yourdockerhubusername/multi-arch-python-demo:latest \
   --push .
-
+```
 
 Replace yourdockerhubusername with your Docker Hub username.
 
@@ -47,13 +47,13 @@ Replace yourdockerhubusername with your Docker Hub username.
 
 ```bash
 docker run -p 5000:5000 yourdockerhubusername/multi-arch-python-demo:latest
-
+```
 Then visit: http://localhost:5000
 
 Verify Supported Platforms
 ```bash
 docker buildx imagetools inspect yourdockerhubusername/multi-arch-python-demo:latest
-
+```
 ## Summary
 
 This project shows how to:
@@ -64,5 +64,3 @@ Package a Python app into a cross-platform container image
 
 Run it on Intel, ARM, or any supported architecture
 
-
----
